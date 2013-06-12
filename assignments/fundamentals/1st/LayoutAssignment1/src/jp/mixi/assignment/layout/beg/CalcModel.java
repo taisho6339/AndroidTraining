@@ -1,6 +1,6 @@
 package jp.mixi.assignment.layout.beg;
 
-
+//
 public class CalcModel {
 
     @SuppressWarnings("unused")
