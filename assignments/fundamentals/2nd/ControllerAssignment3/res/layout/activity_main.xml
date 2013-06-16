@@ -1,8 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    android:layout_height="match_parent" >
 
     <!-- TODO: この RelativeLayout の子要素から、適宜 View を抜き出して、Fragment に切り出す -->
 
@@ -52,12 +51,13 @@
             android:layout_centerHorizontal="true"
             android:background="#393939" />
 
-        <fragment
-            android:id="@+id/fragment1"
-            android:name="jp.mixi.assignment.controller.adv.MyFragment1"
+        <FrameLayout
+            android:id="@+id/FragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/BodyInput" />
+            android:layout_below="@+id/BodyInput" >
+        </FrameLayout>
+        
     </RelativeLayout>
 
 </ScrollView>
