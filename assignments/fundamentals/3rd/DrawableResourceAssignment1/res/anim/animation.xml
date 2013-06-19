@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 回転と平行移動を同時に行うアニメーション -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 回転は無限回 -->
+    <!-- アニメーションする View のちょうど真ん中を中心に一周する -->
+    <rotate
+        android:duration="1000"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="infinite"
+        android:toDegrees="360" />
+    <!-- 平行移動は 1 回だけ -->
+    <!-- アニメーションする View の親の 40% の位置に移動する -->
+    <translate
+        android:duration="1000"
+        android:repeatCount="infinite"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="50%"
+        android:toYDelta="50%" />
+
+</set>

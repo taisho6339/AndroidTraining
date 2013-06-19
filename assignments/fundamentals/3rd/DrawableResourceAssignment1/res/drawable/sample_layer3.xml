@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/Green" />
+        </shape>
+    </item>
+
+    <!-- 一番下のレイヤに配置する、グレーで塗りつぶされた四角形の Drawable を持つ item 要素 -->
+    <item>
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:innerRadiusRatio="18.0"
+            android:shape="ring"
+            android:useLevel="false" >
+            <solid android:color="@color/Red" />
+        </shape>
+    </item>
+
+</layer-list>
