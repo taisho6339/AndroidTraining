@@ -3,6 +3,7 @@ package jp.mixi.assignment.listview.beg;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class BookActivity extends Activity {
 
@@ -16,6 +17,8 @@ public class BookActivity extends Activity {
         setContentView(R.layout.activity_book);
 
         // TODO:MainActiviyから送られてきたtitleを表示してください。
+        TextView text = (TextView)findViewById(R.id.BookTitle);
+        text.setText(getIntent().getExtras().getString("BOOK_TITLE"));
 
     }
 }
